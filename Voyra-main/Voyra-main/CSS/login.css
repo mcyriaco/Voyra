@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(135deg, rgba(11, 50, 146, 0.9), rgba(46, 108, 255, 0.9)),
+    url("/Voyra-main/imagens/fundoparis.png.png") no-repeat bottom center;
+  background-size: cover;
+  background-image:
+    linear-gradient(135deg, rgba(11, 50, 146, 0.8), rgba(46, 108, 255, 0.8)),
+    url("/Voyra-main/Voyra-main/IMAGENS/fundoparis.png.png");
+  padding: 20px 0;
+}
+
+.login-card {
+  width: 420px;
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+body > p {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+h2 {
+  color: #03184c;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.input-group img {
+  position: absolute;
+  top: 42px;
+  left: 14px;
+  width: 16px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.input-group input {
+  padding-left: 42px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #0b3292;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #e9edf5;
+  border-radius: 12px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 15px;
+  background-color: #fafbfc;
+}
+
+input:focus {
+  border-color: #2e6cff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px rgba(46, 108, 255, 0.15);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #333;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.options a {
+  color: #1147c7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1147c7, #2e6cff);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(17, 71, 199, 0.35);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 25px 0;
+  color: #777;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Linha esquerda */
+.divider::before {
+  content: "";
+  flex: 1; /* Faz a linha ocupar o espaço disponível */
+  border-bottom: 1px solid #e9edf5;
+  margin-right: 12px; /* Espaço entre a linha e o texto */
+}
+
+/* Linha direita */
+.divider::after {
+  content: "";
+  flex: 1; /* Faz a linha ocupar o espaço disponível */
+  border-bottom: 1px solid #e9edf5;
+  margin-left: 12px; /* Espaço entre a linha e o texto */
+}
+
+/* O texto central */
+.divider span {
+  flex-shrink: 0; /* Impede que o texto seja espremido */
+  font-weight: 400;
+  white-space: nowrap; /* Garante que o texto não quebre linha */
+}
+
+/* Botões sociais lado a lado */
+.social-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.social-btn {
+  flex: 1;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #d0d7de;
+}
+
+.social-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.signup {
+  text-align: center;
+  margin-top: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.signup a {
+  color: #1147c7;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    width: 92%;
+    padding: 25px;
+  }
+}
+
+.google-btn {
+  width: 100%;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 15px;
+}
+
+.google-btn:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: #d0d7de;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Estilo para os outros ícones ficarem lado a lado (se usar a estrutura acima) */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.icon-btn {
+  flex: 1;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
